@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             android:layout_width="match_parent"
+             android:layout_height="match_parent"
+             android:background="@color/black"
+             android:visibility="gone"
+    >
+
+    <ImageView
+        android:id="@+id/screen_shot_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:scaleType="fitXY"
+        />
+
+    <tv.acfun.core.view.player.graffiti.DoodleView
+        android:id="@+id/doodle_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        />
+
+    <ImageView
+        android:id="@+id/graffiti_back_image"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:focusable="true"
+        android:layout_marginTop="20dp"
+        android:paddingBottom="8dp"
+        android:paddingLeft="24dp"
+        android:paddingRight="24dp"
+        android:paddingTop="8dp"
+        android:src="@mipmap/ic_back" />
+
+    <RelativeLayout
+        android:id="@+id/graffiti_buttom_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:padding="8dp"
+        >
+
+        <ImageView
+            android:id="@+id/graffiti_tools_up_left"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:src="@mipmap/ic_back"
+            />
+
+        <ImageView
+            android:id="@+id/graffiti_tools_up_right"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_alignParentRight="true"
+            android:src="@mipmap/ic_back"
+            />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/graffiti_tools_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:padding="8dp"
+        >
+
+        <ImageView
+            android:id="@+id/graffiti_tools_down_left"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:src="@mipmap/ic_back"
+            />
+
+        <ImageView
+            android:id="@+id/graffiti_revote_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_toRightOf="@id/graffiti_tools_down_left"
+            android:src="@mipmap/ic_back"
+            />
+
+        <ImageView
+            android:id="@+id/graffiti_paint_size_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_toRightOf="@id/graffiti_revote_btn"
+            android:src="@mipmap/ic_back"
+            />
+
+        <ImageView
+            android:id="@+id/graffiti_paint_color_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_toRightOf="@id/graffiti_paint_size_btn"
+            android:src="@mipmap/ic_back"
+            />
+
+        <ImageView
+            android:id="@+id/graffiti_clear_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_toRightOf="@id/graffiti_paint_color_btn"
+            android:src="@mipmap/ic_back"
+            />
+
+        <ImageView
+            android:id="@+id/graffiti_duration_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_toRightOf="@id/graffiti_clear_btn"
+            android:src="@mipmap/ic_back"
+            />
+
+        <ImageView
+            android:id="@+id/graffiti_tools_down_right"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_alignParentRight="true"
+            android:src="@mipmap/ic_back"
+            />
+
+        <ImageView
+            android:id="@+id/graffiti_send_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_toLeftOf="@id/graffiti_tools_down_right"
+            android:src="@mipmap/ic_back"
+            />
+
+        <ImageView
+            android:id="@+id/graffiti_preview_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_toLeftOf="@id/graffiti_send_btn"
+            android:src="@mipmap/ic_back"
+            />
+
+    </RelativeLayout>
+
+</FrameLayout>
