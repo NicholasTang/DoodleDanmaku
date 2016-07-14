@@ -1,1 +1,0 @@
-"# DoodleDanmaku"  initgit add README.mdgit commit -m "first commit"git remote add origin git@github.com:NicholasTang/DoodleDanmaku.gitgit push -u origin master
